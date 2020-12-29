@@ -1,0 +1,6 @@
+[Thumbnailer Entry]
+TryExec=dwgthumbnailer
+Exec=dwgthumbnailer %u %s %i %o
+MimeType=image/vnd.dwg
+
+

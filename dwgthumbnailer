@@ -1,0 +1,9 @@
+#!/bin/sh
+URL=$1
+SIZE=$2
+PATHIN=$3
+PATHOUT=$4
+PATHTMP=$(mktemp)
+dwgthumb "$PATHIN" "$PATHTMP"
+gm convert -geometry ${SIZE}x${SIZE} "$PATHTMP" "$PATHOUT"
+rm -f "$PATHTMP"
